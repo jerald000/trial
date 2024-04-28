@@ -1,0 +1,136 @@
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; /* Ensures header stays above other content */
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    margin: 100px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: #007bff;
+}
+
+.container .action-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container h2 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.container p {
+    margin-bottom: 10px;
+}
+
+.container a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Narrow container */
+.container.narrow {
+    width: 25%;
+}
+
+/* Wide container */
+.container.wide {
+    width: 50%;
+}
+
+.container p:last-child {
+    margin-bottom: 0;
+}
+
+.container p:last-child a {
+    text-decoration: none; /* Remove text decoration for links in the last paragraph */
+}
+
+.container form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container form .form-group {
+    margin-bottom: 20px;
+}
+
+.container form input[type="text"],
+.container form input[type="password"],
+.container form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container form .button-group {
+    text-align: center;
+}
+
+.container form .button-group input[type="submit"] {
+    width: 48%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container form .button-group input[type="reset"] {
+    width: 48%;
+    background-color: #ffffff;
+    color: #007bff;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important; /* Change the color to match your background */
+}
